@@ -31,7 +31,7 @@ stockfish = Stockfish("C:\\Stockfish\\stockfish.exe",
     "Slow Mover": 0,
     "UCI_Chess960": "false",
     #"SyzygyPath": "C:\\Stockfish\\syzygy",
-})
+}, depth=6)
 
 driver.get("https://www.lichess.org")
 
