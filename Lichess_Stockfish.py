@@ -51,10 +51,10 @@ while True:
     elif len(moves) < len(driver.find_elements_by_tag_name("u8t")):
         moves.append(getElementByClassName("a1t").text)
         convert_and_print()
-    elif len(moves) > len(driver.find_elements_by_tag_name("u8t")):
-        del moves[-1]
-        convert_and_print()
     elif (len(moves) > len(driver.find_elements_by_tag_name("u8t"))) and len(driver.find_elements_by_tag_name("u8t")) == 1:
         pgnConverter.resetBoard()
         moves = [getElementByClassName("a1t").text]
         convert_and_print() 
+    elif len(moves) > len(driver.find_elements_by_tag_name("u8t")):
+        del moves[-1]
+        convert_and_print()
