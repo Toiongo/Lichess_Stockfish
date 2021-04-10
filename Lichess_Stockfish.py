@@ -1,7 +1,6 @@
 from stockfish import Stockfish
 from selenium import webdriver
 import pgn_to_fen
-import re
 import os
 
 driver = webdriver.Chrome()
